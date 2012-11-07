@@ -1,14 +1,27 @@
-<header class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "sample app", '#', id: "logo" %>
-      <nav>
-        <ul class="nav pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Help", help_path %></li>
-          <li><%= link_to "Sign in", '#' %></li>
-        </ul>
-      </nav>
-    </div>
+<div id="dvtopcontainer">
+  <!-- top container starts here-->
+  <div id="dvlogocontainer">
+    <!-- logo container starts here-->
+  <h1>Sample App</h1>
+  <h4>Here is my Tag Line</h4>
+    
+    <!-- logo container ends here-->
   </div>
-</header>
+  <div id="dvnavicontainer">
+    <!-- navogation div starts here-->
+    <%= image_tag("navi_left.jpg", alt: "Title") %>
+<div id="tabs1" >
+      <ul>
+        <!-- CSS Tabs -->
+        <li id="current"><a href="#"><span>Home</span></a></li>
+        <li><a href="#"><span>Services</span></a></li>
+        <li><a href="#"><span>Portfolio </span></a></li>
+        <li><a href="#"><span>Blog</span></a></li>
+        <li><a href="#"><span>About Us</span></a></li>
+      </ul>
+    </div>
+    <%= image_tag("navi_right.jpg", alt: "Title") %>
+    <!-- navogation div ends here-->
+  </div>
+  <!-- top container ends here-->
+</div>

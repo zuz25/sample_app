@@ -1,17 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><%= full_title(yield(:title)) %></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>    
-  </head>
-  <body>
-    <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
-      <%= render 'layouts/footer' %>
-    </div>
-  </body>
+    <%= render 'layouts/shim' %>   
+</head>
+<body>
+<div id="dvmaincontainer">
+  <!--main div container starts here-->
+  <%= render 'layouts/header' %>
+  <%= yield %>
+  </div>
+  <!--main div container ends here-->
+  <%= render 'layouts/footer' %>
+</body>
 </html>

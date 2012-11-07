@@ -1,13 +1,76 @@
-<div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
-
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+<div id="dvbodycontainer">
+<!-- body div starts here-->
+<div id="dvbannerbgcontainer">
+  <!-- banner bg div starts here-->
+  <div class="lftcontainer">
+    <div class="dvbannerleft">
+      <!-- banner left div starts here-->
+      <%= image_tag("light.jpg", alt: "Light") %>
+      <p><b>Bright Ideas</b> One of our services is our bright ideas and details.</p>
+      <!-- banner left div ends here-->
+    </div>
+    <div class="dvbannerleft">
+      <!-- banner left div starts here-->
+      <%= image_tag("home_icon.jpg", alt: "Title") %>
+      <p><b>Project Quote</b> We provide you with a detailed price quote.</p>
+      <!-- banner left div ends here-->
+    </div>
+    <div class="dvbannerleft">
+      <!-- banner left div starts here-->
+      <%= image_tag("rpt.jpg", alt: "Title") %>
+      <p><b>Environment</b> We care about the environment and our projects.</p>
+      <!-- banner left div ends here-->
+    </div>
+  </div>
+  <div id="dvbanner">
+    <!-- banner div starts here-->
+    <%= image_tag("banner.jpg", alt: "Title") %>
+    <!-- banner div ends here-->
+  </div>
+  <!-- banner bg div ends here-->
 </div>
+<div id="dvleftpanel">
+  <!-- left pannel div starts here-->
+  <div id="topimage">
+    <!-- top left div starts here-->
+   CLIENT TESTIMONIALS 
+    <!--<img src="images/client.jpg" alt="Client Testimonials" width="274" height="34" title="Client Testimonials" /> -->
+    <!-- top left div end here-->
+  </div>
+  <div id="midcont">
+    <!-- left body div starts here-->
+    <p>"Best services ever! I'd be lost without your company. Your company was great to work with and we look forward to dealing with you in the future. </p>
+    <p>I would recommend your great services to anyone. I appreciate all your help and your passion for the environment."</p>
+    <p><span>- Potential Client Testimonial</span></p>
+    <!-- left body div ends here-->
+  </div>
+  <div id="leftfoot"><span>Nice little Sidebar</span>
+    <p>This is where you can put some services text fillers.</p>
+    <p>The more you put the better</p>
+  </div>
+  <!-- left pannel div ends here-->
+</div>
+<div id="dvrightpanel">
+  <!-- right panel div starts here-->
+  <h1>Leader in E-Commerce Solutions</h1>
+  <p>We are an eco based web and logo design company. Our main focus is working with companies that are green friendly. We specialize in getting businesses onto the Internet quickly and professionally. From custom logo identity, to fully branded web and print, we can take your business to success!</p>
+  <p>This area is where your intro text can go, and this is what your text links will look like.</p>
+  <div class="line">
+	image_tag("h_line.jpg", height: '1', width: '535')
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+
+  </div>
+  <h1>Our Amazing Team</h1>
+  <p>We specialize in getting businesses onto the Internet quickly and professionally. As a one stop provider you will find it easier than ever to gain the strong web presence every modern business requires; from design to brand development.</p>
+  <div class="learn"><span><a href="#">LEARN MORE</a></span></div>
+  <div id="righttfoot"> 
+  	<%= image_tag("home_icon.jpg", alt: "Title") %>
+    <p>We are great to work with on projects.</p>
+    <%= image_tag("light.jpg", alt: "Title") %>
+    <p>We have great ideas that will benefit you.</p>
+    <%= image_tag("rpt.jpg", alt: "Title") %>
+    <p>We care about the environment a lot.</p>
+  </div>
+  <!-- right panel div ends here-->
+</div>
+<!-- body div ends here-->
