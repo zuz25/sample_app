@@ -27,4 +27,23 @@ describe "StaticPages" do
       page.should have_content('About')
     end
   end
+
+
+it "should have the right title" do
+  visit '/static_pages/home'
+  page.should have_selector('title',
+                    :text => "BH Sample App | Home")
+end
+
+it "should have the right title" do
+  visit '/static_pages/help'
+  page.should have_selector('title',
+                    :text => "BH Sample App | Help")
+end
+
+it "should have the right title" do
+  visit '/static_pages/about'
+  page.should have_selector('title',
+                    :text => "BH Sample App | About")
+end
 end
