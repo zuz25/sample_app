@@ -1,12 +1,6 @@
-<% provide(:title, 'Home') %>
 <% provide(:h1, 'Sample App') %>
-<!--<% content_for :h1 do %>
-  <%= stylesheet_link_tag 'projects' %>
-<% end %>-->
-<div id="dvbodycontainer">
-<!-- body div starts here-->
-<div id="dvbannerbgcontainer">
-  <!-- banner bg div starts here-->
+<!-- banner bg div starts here-->
+<% content_for :topbody do %>
   <div class="lftcontainer">
     <div class="dvbannerleft">
       <!-- banner left div starts here-->
@@ -33,7 +27,7 @@
     <!-- banner div ends here-->
   </div>
   <!-- banner bg div ends here-->
-</div>
+<% end %>
 <div id="dvleftpanel">
   <!-- left pannel div starts here-->
   <div id="topimage">
@@ -77,5 +71,4 @@
     <p>We care about the environment a lot.</p>
   </div>
   <!-- right panel div ends here-->
-</div>
-<!-- body div ends here-->
+

@@ -1,8 +1,21 @@
 <% provide(:title, 'About Us') %>
+<% provide(:h1, 'About Us') %>
 <!DOCTYPE html>
-<h1>About Us</h1>
-  <p>
-    This page is about us. You should definitely read it.
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </p>
+<% content_for :topbody do %>
+	<center><h2>This content will go in the top section.</h2></center>
+<% end %>
+<div id="dvleftpanel">
+  <p>What do i write here</p>
+  <div id="midcont">
+	<p>Here's some content for this section</p>
+  </div>
+</div>
+<div id="dvrightpanel">
+  <!-- right panel div starts here-->
+  <p>Here's some content for the right panel</p>
+  <div class="line">
+	image_tag("h_line.jpg", height: '1', width: '535')
+
+
+  </div>
+

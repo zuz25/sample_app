@@ -13,7 +13,11 @@
 <div id="dvmaincontainer">
   <!--main div container starts here-->
   <%= render 'layouts/header' %>
+  <div id="dvbodycontainer">
+  <%= render 'layouts/topbody' %>
+  <%= render 'layouts/bottombody' %>
   <%= yield %>
+  </div>
   </div>
   <!--main div container ends here-->
   <%= render 'layouts/footer' %>
